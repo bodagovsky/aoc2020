@@ -9,7 +9,7 @@ pub(crate) fn sum_2020() {
     let diffs: Vec<i32> = input.iter().map(|x| 2020 - *x).collect();
     for dif in &diffs {
         let doub = find_doubles(*dif, input.clone());
-        if !doub.is_empty() && doub[0] + doub[1] + (2020 - *dif) == 2020 {
+        if !doub.is_empty() {
             println!("product of triplet {}", doub[0] * doub[1] * (2020 - *dif));
             break;
         }
