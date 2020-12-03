@@ -19,7 +19,7 @@ pub(crate) fn valid_passwords() {
     )
 }
 
-fn fetch_input() -> Vec<String> {
+pub fn fetch_input() -> Vec<String> {
     let mut input: Vec<String> = vec![];
     let stdin = io::stdin();
     for line in stdin.lock().lines() {
